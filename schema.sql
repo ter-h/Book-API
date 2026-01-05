@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS books (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    author TEXT NOT NULL,
+    year_published INT NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+)
